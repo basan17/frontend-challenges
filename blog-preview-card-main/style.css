@@ -1,0 +1,124 @@
+:root {
+    --yellow: #f4d04e;
+    --gray-950: #111111;
+    --gray-500: #6b6b6b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-module {
+    background-color: white;
+    max-width: 384px;
+    padding: 24px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.card-img {
+    height: 200px;
+    background-image: url(./assets/images/illustration-article.svg);
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+
+    margin-bottom: 18px;
+}
+
+.card-module section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-module section>* {
+    margin: 6px 0;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: var(--yellow);
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 800;
+
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+.publication-date {
+    font-size: 14px;
+}
+
+.card-title {
+    font-weight: 800;
+}
+
+.card-title:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card-description {
+    color: var(--gray-500);
+}
+
+.card-author {
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card-author img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    content: '';
+    background-image: url();
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-bottom: 10px;
+    right: 0;
+    left: 0;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Media width less than 375px  */
+
+@media screen and (max-width: 375px) {
+    .card-module {
+        max-width: 327px;
+    }
+
+    .card-img {
+        background-size: auto;
+    }
+  }
