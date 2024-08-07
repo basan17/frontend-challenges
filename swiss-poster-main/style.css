@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 156px;
+    letter-spacing: -6px;
+    line-height: 0.9;
+}
+
+#swissPoster {
+    width: 668px;
+    height: 950px;
+    background-color: #ff2f18;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 130px);
+    grid-template-rows: repeat(7, 128px);
+    gap: 4px 28px;
+
+    position: relative;
+}
+
+.first-row {
+    position: relative;
+    left: 5px;
+}
+
+.second-row {
+    grid-column-start: 2;
+    grid-row: 2;
+}
+
+.third-row {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.fourth-row {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.fifth-row {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.bottom {
+    font-size: 40px;
+}
+
+ul {
+    list-style: none;
+    grid-column: 3;
+    grid-row: 6;
+    position: absolute;
+    top: 57px;
+    padding-left: 0;
+}
+
+ul>li {
+    letter-spacing: 0;
+}
+
+.number-four {
+    grid-column: 2;
+    grid-row: 6;
+    position: absolute;
+    left: 103px;
+    top: 98px;
+}
